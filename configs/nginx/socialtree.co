@@ -33,3 +33,8 @@ server {
         deny  all;
     }
 }
+
+server {
+   server_name www.socialtree.co;
+   rewrite ^ http://oboxmedia.com$request_uri permanent;
+}
