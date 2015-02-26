@@ -11,7 +11,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-
+    <link href="css/colorbox.css" rel="stylesheet">
+    
     <!-- Add custom CSS here -->
     <link href="socialtree.css" rel="stylesheet">
 </head>
@@ -23,7 +24,7 @@
 					<h1>Welcome to Social Tree</h1><br>
 					<h2>Social Tree will help you filter all your social media accounts.</h2><br>
 					<div class="col-md-4 col-md-12 col-md-offset-4">
-						<a href="" class="btn btn-primary btn-email">Sign up with email</a>
+						<a id="signup" href="#lightbox" class="btn btn-primary btn-email">Sign up with email</a>
 					</div>
 				</div>
 			</div>
@@ -61,4 +62,19 @@
         </div>
     </div>
     <!--/Callout -->
+
+    <!-- Javascript libs -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/jquery.colorbox.js"></script>
+
+    <script>
+        $('#signup').colorbox({
+            "href": "/signup.html",
+            
+        });
+    </script>
+
+    <!-- /Javascript Libs  -->
+
 </body>
