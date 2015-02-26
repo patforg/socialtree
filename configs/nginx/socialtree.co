@@ -1,0 +1,35 @@
+server {
+    listen   80;
+    server_name socialtree.co;
+
+    root /var/www/socialtree.co/public;
+
+    index  index.html index.htm index.php;
+
+    access_log  /var/log/nginx/socialtree.co.access.log;
+    error_log  /var/log/nginx/socialtree.co.error.log;
+
+
+    location / {
+
+    }
+
+    location ~* \.(jpg|png|gif|jpeg|css|js|mp3|wav|swf|mov|doc|pdf|xls|ppt|docx|pptx|xlsx)$ {
+        access_log        off;
+        expires           30d;
+    }
+
+    client_max_body_size 10M;
+
+    # avoid logging some common files
+    location = /robots.txt { log_not_found off; access_log off; }
+    location = /favicon.ico { log_not_found off; access_log off; }
+    location = /apple-touch-icon.png { log_not_found off; access_log off; }
+    location = /apple-touch-icon-precomposed.png { log_not_found off; access_log off; }
+
+    # deny access to .htaccess files, if Apache's document root
+    # concurs with nginx's one
+    location ~ /\. {
+        deny  all;
+    }
+}
