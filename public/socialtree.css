@@ -4,6 +4,14 @@ body {
   width: 100%;
 }
 
+/*Align Vertically*/
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*Header*/
 header {
 	height: 100%;
   	width: 100%;
@@ -21,15 +29,10 @@ header h1 {
 	font-weight: bold;
 }
 
+/*Logo*/
 .logo {
 	width: 55%;
 	padding-bottom: 5%;
-}
-
-.vert-text {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
 }
 
 /*Social Media and Email buttons*/
@@ -68,7 +71,6 @@ header h1 {
 }
 
 
-
 /*About section*/
 .intro {
 	width: 100%;
@@ -78,38 +80,7 @@ header h1 {
 	margin-bottom: 10%;
 }
 
-.callout2 {
-	color: #000;
-	display: table;
-	height: 250px;
-	width: 100%;
-	background: url("img/quote_bkgd.png") no-repeat center center scroll;
-	background-color:#000;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-.callout2 h3 {
-	width: 80%;
-	margin-left: 10%;
-	padding: 3%;
-	color: #fff;
-	font-weight: normal;
-	
-}
-
-.callout2 a {
-	color: #E3E3E3;
-}
-
-.callout2 a:hover {
-	color: #2F8B58;
-	text-decoration: none;
-	
-}
+/*Franco's Quote*/
 .callout1 {
 	display: table;
 	height: 250px;
@@ -144,4 +115,38 @@ header h1 {
 .callout1 a:hover {
 	color: #fff;
 	text-decoration: none;
+}
+
+/*Erin's Quote*/
+.callout2 {
+	color: #000;
+	display: table;
+	height: 250px;
+	width: 100%;
+	background: url("img/quote_bkgd.png") no-repeat center center scroll;
+	background-color:#000;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.callout2 h3 {
+	width: 80%;
+	margin-left: 10%;
+	padding: 3%;
+	color: #fff;
+	font-weight: normal;
+	
+}
+
+.callout2 a {
+	color: #E3E3E3;
+}
+
+.callout2 a:hover {
+	color: #2F8B58;
+	text-decoration: none;
+	
 }
