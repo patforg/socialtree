@@ -22,17 +22,19 @@ header {
   	-o-background-size: cover;
   	background-size: cover;
   	padding-top: 5%;
+  	
 } 
 
 header h1 {
 	font-size: 64px;
 	font-weight: bold;
+	padding-bottom: 2%;
 }
 
 /*Logo*/
 .logo {
-	width: 55%;
-	padding-bottom: 5%;
+	width: 65%;
+	padding-top: 2%;
 }
 
 /*Social Media and Email buttons*/
