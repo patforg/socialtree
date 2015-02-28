@@ -105,7 +105,7 @@ header h1 {
 	background-size: cover;
 }
 
-.callout2 h2 {
+.callout2 blockquote {
 	width: 80%;
 	margin-left: 10%;
 	/*border-color: #fff;
@@ -113,11 +113,11 @@ header h1 {
 	background-color: #fff;*/
 	padding: 3%;
 	color: #fff;
-	font-weight: normal;	
 }
 
-.callout2 blockquote {
-	font-size: 20px;
+.callout2 h3 {
+	font-size: 22px;
+	font-weight: normal;	
 }
 
 .callout2 a {
