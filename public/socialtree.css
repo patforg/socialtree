@@ -77,6 +77,23 @@ header h1 {
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+.callout h2 {
+	width: 80%;
+	margin-left: 10%;
+	padding: 3%;
+	color: #000;
+	
+}
+
+.callout a {
+	color: #4E614C;
+}
+
+.callout a:hover {
+	color: #718C6D;
+	text-decoration: none;
+}
 .callout2 {
 	display: table;
 	height: 250px;
@@ -108,6 +125,6 @@ header h1 {
 }
 
 .callout2 a:hover {
+	color: #D6D6D6;
 	text-decoration: none;
-	font-size: 24px;
 }
