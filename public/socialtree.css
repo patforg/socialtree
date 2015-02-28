@@ -27,6 +27,7 @@ header h1 {
   text-align: center;
 }
 
+/*Social Media and Email buttons*/
 .btn-facebook {
 	background-color: #3b5998;
 	border-color: #3b5998;
@@ -57,6 +58,7 @@ header h1 {
 	border-color: #718C6D;
 }
 
+/*About section*/
 .intro {
 	width: 100%;
 	background-color: #fff;
@@ -65,12 +67,13 @@ header h1 {
 	margin-bottom: 10%;
 }
 
-.callout {
+.callout2 {
 	color: #000;
 	display: table;
 	height: 250px;
 	width: 100%;
 	background: url("img/quote_bkgd.png") no-repeat center center scroll;
+	background-color:#000;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -78,23 +81,23 @@ header h1 {
 	background-size: cover;
 }
 
-.callout h2 {
+.callout2 h2 {
 	width: 80%;
 	margin-left: 10%;
 	padding: 3%;
-	color: #000;
+	color: #fff;
 	
 }
 
-.callout a {
-	color: #4E614C;
+.callout2 a {
+	color: #E3E3E3;
 }
 
-.callout a:hover {
+.callout2 a:hover {
 	color: #718C6D;
 	text-decoration: none;
 }
-.callout2 {
+.callout1 {
 	display: table;
 	height: 250px;
 	width: 100%;
@@ -105,7 +108,7 @@ header h1 {
 	background-size: cover;
 }
 
-.callout2 blockquote {
+.callout1 blockquote {
 	width: 80%;
 	margin-left: 10%;
 	/*border-color: #fff;
@@ -113,18 +116,19 @@ header h1 {
 	background-color: #fff;*/
 	padding: 3%;
 	color: #fff;
+
 }
 
-.callout2 h3 {
+.callout1 h3 {
 	font-size: 22px;
 	font-weight: normal;	
 }
 
-.callout2 a {
+.callout1 a {
 	color: #A9ABAA;
 }
 
-.callout2 a:hover {
-	color: #D6D6D6;
+.callout1 a:hover {
+	color: #718C6D;
 	text-decoration: none;
 }
