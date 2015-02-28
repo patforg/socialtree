@@ -77,3 +77,37 @@ header h1 {
 	-o-background-size: cover;
 	background-size: cover;
 }
+.callout2 {
+	display: table;
+	height: 250px;
+	width: 100%;
+	background-color:#4E614C;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.callout2 h2 {
+	width: 80%;
+	margin-left: 10%;
+	/*border-color: #fff;
+	border-style: solid;
+	background-color: #fff;*/
+	padding: 3%;
+	color: #fff;
+	font-weight: normal;	
+}
+
+.callout2 blockquote {
+	font-size: 20px;
+}
+
+.callout2 a {
+	color: #A9ABAA;
+}
+
+.callout2 a:hover {
+	text-decoration: none;
+	font-size: 24px;
+}
