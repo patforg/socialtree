@@ -1,10 +1,192 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        app
-    </body>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<!--Stylesheet-->
+		<link rel="stylesheet" href="css/styles.css">
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<!--Google font-->
+		<link href='http://fonts.googleapis.com/css?family=Pacifico|Raleway|Ubuntu:400,700|Unkempt:700|Open+Sans:300|Architects+Daughter' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+
+
+		<div id="toggle"> </div>
+			<div class="menu closed">
+			  <ul>
+			    <li>Trending</li>
+			    <li>Sports</li>
+			    <li>Gaming</li>
+			    <li>Music</li>
+			    <li>More</li>
+			  </ul>
+			</div>
+
+
+
+			<!-- Fixed navbar -->
+	    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#"><b>Social Tree</b></a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li class="active"><a href="#home" class="smothscroll">Home</a></li>
+	            <li><a href="#desc" class="smothscroll">Description</a></li>
+	            <li><a href="#showcase" class="smothScroll">Showcase</a></li>
+	            <li><a href="#contact" class="smothScroll">Contact</a></li>	        
+	          </ul>
+
+	          <div class="col-sm-3 col-md-3 pull-right">
+            	<form class="navbar-form" role="search">
+	                <div class="input-group">
+	                    <input type="text" class="form-control" placeholder="Search" name="q">
+	                    <div class="input-group-btn">
+	                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+	                    </div>
+	                </div>
+            	</form>
+        	</div> 
+
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+
+
+
+		<div id="backgroundbanner" class="container-fluid" style="background-size:100%; background-color:#F5F5DC; font-family:Raleway; background-image: url(images/background.jpg); ">
+
+		<!--SPACING-->
+		<br><br><br><!--SPACING-->
+
+
+		<div class="container" style="
+						background-color:white; 
+						margin-right: 10%; 
+						margin-left: 10%;
+						margin-top:2%;
+						padding-top: 1%; 
+						padding-bottom: 1%;
+						border-radius: 50px;
+						">
+
+						<div class="col-sm-9">
+							<center>
+								<img class="img-responsive" src="images/tweet1.png">		
+							</center>
+						</div>
+						<div class="col-sm-3">
+								<br><br><br><br>
+								<img class="img-responsive" src="images/twitter.png" style="height:50%; width:50%;">
+						</div>
+
+		</div>
+
+		<div class="container" style="
+						background-color:white; 
+						margin-right: 10%; 
+						margin-left: 10%;
+						margin-top: 2%;
+						padding-top: 1%; 
+						padding-bottom: 1%;
+						border-radius: 50px;
+						">
+
+						<div class="col-sm-9">
+							<center><img class="img-responsive" src="images/fb1.png" style="margin-left:-85px;"></center>
+						</div>
+						<div class="col-sm-3">
+								<br><br><br><br>
+								<img class="img-responsive" src="images/facebook.png" style="height:50%; width:50%; margin-left:-20px;">
+						</div>
+
+
+		</div>
+
+		<div class="container" style="
+						background-color:white; 
+						margin-right: 10%; 
+						margin-left: 10%;
+						margin-top: 2%;
+						padding-top: 1%; 
+						padding-bottom: 1%;
+						border-radius: 50px;
+						">
+
+						<div class="col-sm-9">
+							<center><img class="img-responsive" src="images/pint1.png" style="margin-left:-85px; height:60%; width:60%;"></center>
+						</div>
+						<div class="col-sm-3">
+								<br><br><br><br><br>
+								<img class="img-responsive" src="images/pinterest.png" style="height:50%; width:50%;">
+						</div>
+
+
+		</div>
+
+
+		
+		<br><br><br><br><br><br><br><!--SPACING-->
+		<br><br><br><br><br><br><br><!--SPACING-->
+		<br><br><br><br><br><br><br><!--SPACING-->
+		<br><br><br><br><br><br><br><!--SPACING-->
+		<br><br><br><br><br><br><br><!--SPACING-->
+		<br><br><br><br><br><br><br><!--SPACING-->
+		<br><br><br><br><br><br><br><!--SPACING-->
+		<br><br><br><br><br><br><br>
+
+		</div>
+
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">testingggggggggggggggggggg</div>
+				<div class="col-sm-4"></div>
+			</div>
+		</div>
+
+		
+
+
+
+
+		<!-- Optional: Include the jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Optional: Incorporate the Bootstrap JavaScript plugins -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+		<script>
+			$( "#toggle" ).click(function() {
+			  $(".menu").toggleClass("closed");
+			  $(this).toggleClass("closed");
+			  $(".content").toggleClass("closed");
+			  $("#wrapper").toggleClass("closed")
+			});
+		
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-36251023-1']);
+		  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+
+
+	</body>
 </html>
+
