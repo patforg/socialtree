@@ -1,0 +1,45 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+	height: 100%;
+  	width: 100%;
+  	position: relative;
+	background: url("img/social_bkgd.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	padding-top: 20%;
+} 
+
+header h1 {
+	font-size: 64px;
+}
+
+.btn-facebook {
+	background-color: #3b5998;
+	border-color: #3b5998;
+}
+
+.btn-twitter {
+	background-color: #00aced;
+	border-color: #00aced;
+}
+
+.btn-googleplus {
+	background-color: #dd4b39;
+	border-color: #dd4b39;
+}
+
+.btn-primary {
+	width: 100%;
+}
+
+.btn-primary:hover{
+	background-color: #718C6D;
+	border-color: #718C6D;
+}
