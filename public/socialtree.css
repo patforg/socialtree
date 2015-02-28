@@ -13,12 +13,17 @@ header {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-  	padding-top: 20%;
+  	padding-top: 5%;
 } 
 
 header h1 {
 	font-size: 64px;
 	font-weight: bold;
+}
+
+.logo {
+	width: 55%;
+	padding-bottom: 5%;
 }
 
 .vert-text {
@@ -87,11 +92,12 @@ header h1 {
 	background-size: cover;
 }
 
-.callout2 h2 {
+.callout2 h3 {
 	width: 80%;
 	margin-left: 10%;
 	padding: 3%;
 	color: #fff;
+	font-weight: normal;
 	
 }
 
