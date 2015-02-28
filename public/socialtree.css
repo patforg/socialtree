@@ -49,6 +49,7 @@ header h1 {
 .btn-primary {
 	width: 100%;
 	font-size: 16px;
+	border-radius: 5px; 
 }
 
 .btn-primary:hover{
