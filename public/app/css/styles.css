@@ -10,14 +10,16 @@ body {
   padding: 0;
   height: 100%;
   min-height: 100%;
-  background-color: floralwhite;
+
+  background-image: url("images/background.jpg");
+
 }
 
 .menu {
   width: 250px;
   height: 100%;
   position: fixed;
-  background-color: #72AD0D;
+  background-color: seagreen;
   -webkit-transition: all 1s;
   transition: all 1s;
   left: 0;
@@ -29,7 +31,7 @@ body {
 .menu.closed { left: -250px; }
 
 #toggle {
-  background-color: #72AD0D;
+  background-color: seagreen;
   height: 100%;
   min-height: 100%;
   width: 50px;
@@ -149,41 +151,4 @@ hr:before {
 *::selection {
   background-color: #1b5233;
   color: floralwhite;
-}
-
-
-
-
-
-
-
-
-/* Top menu search bar*/
-
-
-
-/* Sections */
-
-section {
-  width: 100%;
-  padding: 50px;
-  background: #fff;
-  border-bottom: 1px solid #ccc;
-  height: 500px;
-  text-align: center;
-}
-section:nth-child(even) {
-  background: #9BD668;
-}
-section:nth-child(odd) {
-  background: #6C9548;
-}
-.sections section:first-child {
-  margin-top: 60px;
-}
-section.active {}
-
-footer {
-  height: 500px;
-  background: #34495e;
 }
