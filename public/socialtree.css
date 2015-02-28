@@ -58,6 +58,11 @@ header h1 {
 	border-color: #718C6D;
 }
 
+.btn-primary:visited{
+	background-color: #718C6D;
+	border-color: #718C6D;
+}
+
 /*About section*/
 .intro {
 	width: 100%;
