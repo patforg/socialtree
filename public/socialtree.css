@@ -35,6 +35,10 @@ header h1 {
 	background-color: #dd4b39;
 	border-color: #dd4b39;
 }
+.btn-email {
+	background-color: #4E614C;
+	border-color: #4E614C;
+}
 
 .btn-primary {
 	width: 100%;
@@ -48,7 +52,7 @@ header h1 {
 .intro {
 	width: 100%;
 	background-color: #fff;
-	color: #718C6D; 
+	color: #000; 
 	padding-top: 10%;
 	padding-bottom: 10%;
 }
@@ -60,14 +64,14 @@ header h1 {
 }
 
 .callout {
-  color: #000;
-  display: table;
-  height: 250px;
-  width: 100%;
-  background: url("img/quote_bkgd.png") no-repeat center center scroll;
-background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	color: #000;
+	display: table;
+	height: 250px;
+	width: 100%;
+	background: url("img/quote_bkgd.png") no-repeat center center scroll;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
