@@ -46,6 +46,10 @@ header h1 {
 	background-color: #4E614C;
 	border-color: #4E614C;
 }
+.btn-success{
+	background-color: #718C6D;
+	border-color: #718C6D;
+}
 
 .btn-primary {
 	width: 100%;
@@ -58,10 +62,7 @@ header h1 {
 	border-color: #718C6D;
 }
 
-.btn-primary:visited{
-	background-color: #718C6D;
-	border-color: #718C6D;
-}
+
 
 /*About section*/
 .intro {
