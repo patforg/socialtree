@@ -21,27 +21,57 @@
 
 
 	<div id="toggle"> </div>
-	<div class="menu closed">
-		<ul>
-			<li style="color:black;" onclick="myFunction()">Add Category +</li>
+	<div  class="menu closed">
+		<ul id="rule">
+			<li style="color:black" data-toggle="modal" data-target="#myModal">
+  							Add Category</li>
 
-			<li role="presentation" class="account_link">Trending <span class="badge" style="background-color:red">10</span></li>
+	<li role="presentation" class="account_link">Trending <span class="badge" style="background-color:red">10</span></li>
 			<li role="presentation" class="account_link"  id="link">Sports <span class="badge" style="background-color:red">6</span></li>
 			<li role="presentation" class="account_link"  id="coffee">Coffee<span class="badge" style="background-color:red">5</span></li>
 			<li role="presentation" class="account_link">Food <span class="badge" style="background-color:red">10</span></li>
 			<li role="presentation" class="account_link">Healthy living <span class="badge" style="background-color:red">3</span></li>
 			<li role="presentation" class="account_link" id="linkstartup" href="images/fb1.png" style="display:none;">Startup Weekend<span class="badge" style="background-color:red">4</span></li>
+ 		</ul>
+ 		<ul class="network">
 			<li  style="color:black;">Social Media +</li>
 			<li class="account_link"><img class="account_img" src="images/facebook_icon.png" > Hugh Nguyen</li>
 			<li class="account_link"><img class="account_img" src="images/twitter.png" > @uottawaSESA</li>
 			<li class="account_link"><img class="account_img" src="images/youtube_icon.png" > Amirtheboss</li>
 			<li class="account_link"><img class="account_img" src="images/pinterest_icon.png" > myAnnoyingCat</li>
+		</ul>
+	</div>
 
-		</div>
 
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">New Category : Make your rules</h4>
+      </div>
+      <div class="modal-body">
+      <h2>Name your rule</h2>
+      <input type="text" name="rulename" id="rad" value="My New Rule"></label> <br>
+      <h2> Pick your networks </h2>
+     <input type="checkbox" name="awesomeness" id="rad" value="facebook"> facebook</label> <br>
+     <input type="checkbox" name="awesomeness" id="rad" value="twitter"> Twitter </label> <br>
+     <input type="checkbox" name="awesomeness" id="rad" value="rss"> RSS </label> 
+     <h2>Topic</h2>
+     <h4></h4>
+      <input type="text" name="ruletopic" id="rad" value="topic"></label> <br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" onclick="myfunc()" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-		<!-- Fixed navbar -->
+			<!-- Fixed navbar -->
 		<div id="navigation" class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -67,7 +97,6 @@
 								<div class="input-group-btn">
 									<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i>	</button>
 								</div>
-							</div>
 						</form>
 					</div> 
 					<a href="http://www.facebook.com">
@@ -282,6 +311,9 @@ function myFunction() {
 	if (person != null) {
 		document.getElementById('linkstartup').style.display = "block";
 	}
+}
+function myfunc(){
+	
 }
 
 </script>
