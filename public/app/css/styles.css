@@ -17,6 +17,19 @@ body {
 
 }
 
+li{
+     display : table-cell;
+   vertical-align : middle;
+   text-align : center;
+}
+li.img{
+   display : table-cell;
+   vertical-align : middle;
+   text-align : center;
+   height:20px;
+    width:20px;
+}
+
 .menu {
   width: 250px;
   height: 100%;
