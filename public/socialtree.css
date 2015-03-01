@@ -72,6 +72,14 @@ header h1 {
 	border-color: #2F8B58;
 }
 
+.btn-primary:active{
+	background-color: #2F8B58;
+	border-color: #2F8B58;
+}
+.btn-primary:focus {
+	background-color: #2F8B58;
+	border-color: #2F8B58;
+}
 
 /*About section*/
 .intro {
