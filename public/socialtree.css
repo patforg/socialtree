@@ -13,17 +13,12 @@ header {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-  	padding-top: 5%;
+  	padding-top: 20%;
 } 
 
 header h1 {
 	font-size: 64px;
 	font-weight: bold;
-}
-
-.logo {
-	width: 55%;
-	padding-bottom: 5%;
 }
 
 .vert-text {
@@ -48,12 +43,8 @@ header h1 {
 	border-color: #dd4b39;
 }
 .btn-email {
-	background-color: #2F8B58;
-	border-color: #2F8B58;
-}
-.btn-success{
-	background-color: #2F8B58;
-	border-color: #2F8B58;
+	background-color: #4E614C;
+	border-color: #4E614C;
 }
 
 .btn-primary {
@@ -63,11 +54,9 @@ header h1 {
 }
 
 .btn-primary:hover{
-	background-color: #2F8B58;
-	border-color: #2F8B58;
+	background-color: #718C6D;
+	border-color: #718C6D;
 }
-
-
 
 /*About section*/
 .intro {
@@ -92,12 +81,11 @@ header h1 {
 	background-size: cover;
 }
 
-.callout2 h3 {
+.callout2 h2 {
 	width: 80%;
 	margin-left: 10%;
 	padding: 3%;
 	color: #fff;
-	font-weight: normal;
 	
 }
 
@@ -106,15 +94,14 @@ header h1 {
 }
 
 .callout2 a:hover {
-	color: #2F8B58;
+	color: #718C6D;
 	text-decoration: none;
-	
 }
 .callout1 {
 	display: table;
 	height: 250px;
 	width: 100%;
-	background-color:#2F8B58;
+	background-color:#4E614C;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -142,6 +129,6 @@ header h1 {
 }
 
 .callout1 a:hover {
-	color: #fff;
+	color: #718C6D;
 	text-decoration: none;
 }

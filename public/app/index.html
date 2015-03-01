@@ -7,19 +7,35 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<!--Google font-->
 	<link href='http://fonts.googleapis.com/css?family=Pacifico|Raleway|Ubuntu:400,700|Unkempt:700|Open+Sans:300|Architects+Daughter' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript"> 
+	$(document).ready( function() {
+		$('#notification').delay(1000).fadeIn();
+	});
+	</script>
 </head>
 
 <body>
 
 
+
 	<div id="toggle"> </div>
 	<div class="menu closed">
 		<ul>
+			<li style="color:black;" onclick="myFunction()">Add Category +</li>
+
 			<li>Trending</li>
-			<li>Sports</li>
-			<li>Gaming</li>
+			<li id="link" href="images/fb1.png" style="display:none;">Sports</li>
 			<li>Music</li>
+			<li id="linkstartup">Startup Weekend</li>
+			<li>Food</li>
 			<li>More</li>
+			<li style="pointer-events:none; color:black;">Social Media</li>
+			<li>Facebook</li>
+			<li>Twitter</li>
+			<li>Youtube</li>
+			<li>Pinterest</li>
 		</ul>
 	</div>
 
@@ -40,8 +56,8 @@
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#home" class="smothscroll">Home</a></li>
-					<li><a href="#desc" class="smothscroll">Description</a></li>
-					<li><a href="#showcase" class="smothScroll">Showcase</a></li>
+					<li><a href="#desc" class="smothscroll">Friends</a></li>
+					<li><a href="#showcase" class="smothScroll">Settings</a></li>
 					<li><a href="#contact" class="smothScroll">Contact</a></li>	        
 				</ul>	
 				<div class="col-sm-3 col-md-3 pull-center">
@@ -66,25 +82,30 @@
 
 
 
-	<div id="backgroundbanner" class="container-fluid" style="background-size:100%; background-color:#F5F5DC; font-family:Raleway; background-image: url(images/background.jpg); ">
+	<div id="backgroundbanner" class="container-fluid" style="font-family:Raleway;">
 
 		<!--SPACING-->
-		<br><br><br><!--SPACING-->
+		<br><br><!--SPACING-->
 
+		<div class="container-fluid" id="notification" style="background-color:#f8f8f8; height:60px; display:none;position:fixed;width:100%; z-index:98; margin-right:10px"> 
 
-		<div class="container" style="
-		background-color:white; 
-		margin-right: 10%; 
-		margin-left: 10%;
-		margin-top:2%;
-		padding-top: 1%; 
-		padding-bottom: 1%;
-		border-radius: 50px;
+			<center>
+				<a id="notification">
+					<p  style="text-align:center;font-size:20px;">
+						<img src="images/facebook_icon.png" style="height:40px; width:40px;">	
+						<b>1 new notification</b>
+					</p>
+				</a>
+			</center>
+
+		</div>
+		<div class="container contentblock" style="
+
 		">
 
 		<div class="col-sm-9">
 			<center>
-				<img class="img-responsive" src="images/tweet1.png">		
+				<img class="img-responsive" id="image1" src="images/tweet1.png">		
 			</center>
 		</div>
 		<div class="col-sm-3">
@@ -94,69 +115,63 @@
 
 	</div>
 
-	<div class="container" style="
-	background-color:white; 
-	margin-right: 10%; 
-	margin-left: 10%;
-	margin-top: 2%;
-	padding-top: 1%; 
-	padding-bottom: 1%;
-	border-radius: 50px;
+	<div class="container contentblock" style="
+
 	">
 
 	<div class="col-sm-9">
-		<center><img class="img-responsive" src="images/fb1.png" style="margin-left:-85px;"></center>
+		<center><iframe width="560" height="315" id="image2" src="https://www.youtube.com/embed/bkV8yyUW67Q" frameborder="0" allowfullscreen></iframe></center>
 	</div>
 	<div class="col-sm-3">
-		<br><br><br><br>
-		<img class="img-responsive" src="images/facebook.png" style="height:50%; width:50%; margin-left:-20px;">
+		<br><br><br><br><br>
+		<img class="img-responsive" src="images/youtube.png" style="height:60%; width:60%; margin-left:-10px;">
 	</div>
 
 
 </div>
 
-<div class="container" style="
-background-color:white; 
-margin-right: 10%; 
-margin-left: 10%;
-margin-top: 2%;
-padding-top: 1%; 
-padding-bottom: 1%;
-border-radius: 50px;
+
+<div class="container contentblock" style="
+
 ">
 
 <div class="col-sm-9">
-	<center><img class="img-responsive" src="images/pint1.png" style="margin-left:-85px; height:60%; width:60%;"></center>
+	<center><img class="img-responsive" id="image3" src="images/fb1.png" style=""></center>
+</div>
+<div class="col-sm-3">
+	<br><br><br><br>
+	<img class="img-responsive" src="images/facebook.png" style="height:45%; width:50%; margin-left:-20px;">
+</div>
+
+
+</div>
+
+<div class="container contentblock" style="
+
+">
+
+<div class="col-sm-9">
+	<center><img class="img-responsive" id="image4" src="images/pint1.png" style="height:60%; width:60%;"></center>
 </div>
 <div class="col-sm-3">
 	<br><br><br><br><br>
-	<img class="img-responsive" src="images/pinterest.png" style="height:50%; width:50%;">
+	<img class="img-responsive" src="images/pinterest.png" style="height:45%; width:45%;">
 </div>
-
-
-</div>
-
-
-
-<br><br><br><br><br><br><br><!--SPACING-->
-<br><br><br><br><br><br><br><!--SPACING-->
-<br><br><br><br><br><br><br><!--SPACING-->
-<br><br><br><br><br><br><br><!--SPACING-->
-<br><br><br><br><br><br><br><!--SPACING-->
-<br><br><br><br><br><br><br><!--SPACING-->
-<br><br><br><br><br><br><br><!--SPACING-->
-<br><br><br><br><br><br><br>
 
 </div>
 
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-4"></div>
-		<div class="col-sm-4">testingggggggggggggggggggg</div>
-		<div class="col-sm-4"></div>
-	</div>
+
+
+
+
+<br><br><br><br><br><br><br><!--SPACING-->
+
+
 </div>
+
+
+
 
 
 
@@ -168,8 +183,19 @@ border-radius: 50px;
 <!-- Optional: Incorporate the Bootstrap JavaScript plugins -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+<script type="text/javascript">
+$(function(){
+	$("#notification").click( function (event) {
+		$('#notification').delay(1000).fadeOut();
+	});
+});
+</script>
+
 
 <script>
+
+
+
 $( "#toggle" ).click(function() {
 	$(".menu").toggleClass("closed");
 	$(this).toggleClass("closed");
@@ -188,6 +214,50 @@ _gaq.push(['_trackPageview']);
 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+
+
+
+
+$("#link").click(function() {
+	$("#image1").fadeOut(1000, function() {
+		$("#image1").attr("src","images/sport1.png");
+	}).fadeIn(1000);
+	$("#image2").fadeOut(1000, function() {
+		$("#image2").attr("src","images/sport2.png");
+	}).fadeIn(1000);
+	$("#image3").fadeOut(1000, function() {
+		$("#image3").attr("src","images/sport3.png");
+	}).fadeIn(1000);
+	$("#image4").fadeOut(1000, function() {
+		$("#image4").attr("src","images/sport4.png");
+	}).fadeIn(1000);
+	return false;
+});
+
+
+$("#linkstartup").click(function() {
+	$("#image1").fadeOut(1000, function() {
+		$("#image1").attr("src","images/tweet1.png");
+	}).fadeIn(1000);
+	$("#image2").fadeOut(1000, function() {
+		$("#image2").attr("src","images/fb1.png");
+	}).fadeIn(1000);
+	$("#image3").fadeOut(1000, function() {
+		$("#image3").attr("src","images/fb1.png");
+	}).fadeIn(1000);
+	$("#image4").fadeOut(1000, function() {
+		$("#image4").attr("src","images/pint1.png");
+	}).fadeIn(1000);
+	return false;
+});
+
+
+function myFunction() {
+	var person = prompt("Please enter your category", "");
+	if (person != null) {
+		document.getElementById('link').style.display = "block";
+	}
+}
 
 </script>
 
