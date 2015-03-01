@@ -16,6 +16,11 @@ body {
   background-size: 100%;  
 
 }
+
+.presentation{ 
+ width:200px;
+}
+
 .account_link{
   width:200px;
 }
