@@ -22,16 +22,15 @@
 
 	<div id="toggle"> </div>
 	<div  class="menu closed">
-		<ul >
+		<ul id="rule">
 			<li style="color:black" data-toggle="modal" data-target="#myModal">
   							Add Category</li>
 
  			<li role="presentation" class="active">Trending <span class="badge" style="background-color:red">10</span></li>
   			<li role="presentation" class="active" id="link" href="images/fb1.png" style="display:none;">Sports <span class="badge" style="background-color:red">4</span></li>			
  			<li role="presentation" class="active">Music <span class="badge" style="background-color:red">2</span></li>
- 			 <li role="presentation" class="active" id="linkstartup">Trending <span class="badge" style="background-color:red">5</span></li>
+ 			<li role="presentation" class="active" id="linkstartup">Trending <span class="badge" style="background-color:red">5</span></li>
  			<li role="presentation" class="active">Food <span class="badge" style="background-color:red">1000</span></li>
- 			<li role="presentation" class="active">More <span class="badge" style="background-color:red">3</span></li>
  		</ul>
  		<ul class="network">
 			<li style="pointer-events:none; color:black;">Social Media</li>
@@ -61,7 +60,7 @@
      <input type="checkbox" name="awesomeness" id="rad" value="rss"> RSS </label> 
      <h2>Topic</h2>
      <h4></h4>
-      <input type="text" name="ruletopic" id="rad" value="topic"></label> <br>
+      <input type="text" name="topic" id="rad" value="topic"></label> <br>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -310,6 +309,23 @@ $("#linkstartup").click(function() {
 	return false;
 });
 
+$("#coffee").click(function() {
+	$("#dress").fadeOut(1000);
+	$("#image1").fadeOut(1000, function() {
+		$("#image1").attr("src","images/tweet1.png");
+	}).fadeIn(1000);
+	$("#image2").fadeOut(1000, function() {
+		$("#image2").attr("src","images/fb1.png");
+	}).fadeIn(1000);
+	$("#image3").fadeOut(1000, function() {
+		$("#image3").attr("src","images/fb1.png");
+	}).fadeIn(1000);
+	$("#image4").fadeOut(1000, function() {
+		$("#image4").attr("src","images/pint1.png");
+	}).fadeIn(1000);
+	return false;
+});
+
 
 function myFunction() {
 	var person = prompt("Please enter your category", "");
@@ -318,7 +334,9 @@ function myFunction() {
 	}
 }
 function myfunc(){
-	
+	var div = document.getElementById('rule');
+
+	div.innerHTML = div.innerHTML + '<li role="presentation" class="active" id="coffee">Coffee <span class="badge" style="background-color:red">15</span></li>';
 }
 
 </script>
