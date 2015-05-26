@@ -1,0 +1,162 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/*Align Vertically*/
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*Header*/
+header {
+
+  	width: 100%;
+  	position: relative;
+	/*background: url("img/social_bkgd.png") no-repeat center center fixed;*/
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	padding-top: 5%;
+  	
+} 
+
+header h1 {
+	font-size: 64px;
+	font-weight: bold;
+}
+
+/*Logo*/
+.logo {
+	width: 65%;
+	padding-top: 2%;
+}
+
+/*Social Media and Email buttons*/
+.btn-facebook {
+	background-color: #3b5998;
+	border-color: #3b5998;
+}
+
+.btn-twitter {
+	background-color: #00aced;
+	border-color: #00aced;
+}
+
+.btn-googleplus {
+	background-color: #dd4b39;
+	border-color: #dd4b39;
+}
+.btn-email {
+	background-color: #4E614C;
+	border-color: #4E614C;
+}
+
+.btn-primary {
+	width: 100%;
+	font-size: 16px;
+	border-radius: 5px; 
+}
+
+.btn-primary:hover{
+	background-color: #718C6D;
+	border-color: #718C6D;
+}
+
+.btn-primary:active{
+	background-color: #2F8B58;
+	border-color: #2F8B58;
+}
+.btn-primary:focus {
+	background-color: #2F8B58;
+	border-color: #2F8B58;
+}
+
+/*About section*/
+.intro {
+	width: 100%;
+	background-color: #fff;
+	color: #000; 
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+/*Rodger's Quote*/
+.callout1 {
+	display: table;
+	height: 250px;
+	width: 100%;
+	background-color:#2F8B58;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.callout1 blockquote {
+	width: 80%;
+	margin-left: 10%;
+	/*border-color: #fff;
+	border-style: solid;
+	background-color: #fff;*/
+	padding: 3%;
+	color: #fff;
+
+}
+
+.callout1 h3 {
+	font-size: 22px;
+	font-weight: normal;	
+}
+.callout1 a {
+	color: #A9ABAA;
+}
+
+.callout1 a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*Raj's Quote*/
+.callout2 {
+	color: #fff;
+	display: table;
+	height: 250px;
+	width: 100%;0%;
+	/*background: url("img/quote_bkgd.png") no-repeat center center scroll;*/
+	background-color:#000;
+	background-color:#000;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.callout2 h3 {
+	width: 80%;
+	margin-left: 10%;
+	padding: 3%;
+	color: white;
+	font-weight: normal;
+	
+}
+
+.callout2 a {
+	color: #E3E3E3;
+}
+
+.callout2 a:hover {
+	color: #2F8B58;
+	text-decoration: none;
+	
+}
+
+.about-blurb {
+	padding-bottom: 2%;
+}
