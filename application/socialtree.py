@@ -33,7 +33,7 @@ class MainHandler(BaseHandler):
         else :
             page['authenticated']='false'
 
-        self.render("assets/frontpage.html",mest=page) 
+        self.render("assets/index.html") 
 
 class LoginHandler(BaseHandler):
     def get(self):
@@ -89,7 +89,7 @@ application = tornado.web.Application(
 
 
 		(r'/(favicon.ico)', tornado.web.StaticFileHandler, {'path': 'assets/'        }),
-        (r'/images/(.*)',   tornado.web.StaticFileHandler, {'path': 'assets/img/' }),
+        (r'/img/(.*)',   tornado.web.StaticFileHandler, {'path': 'assets/img/' }),
         (r'/fonts/(.*)',    tornado.web.StaticFileHandler, {'path': 'assets/fonts/'  }),
 		(r'/css/(.*)',      tornado.web.StaticFileHandler, {'path': 'assets/css/'    }),
         (r'/js/(.*)',       tornado.web.StaticFileHandler, {'path': 'assets/js/'     })
