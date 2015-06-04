@@ -1,1 +1,5 @@
-configninja
+./application/configninja.py
+./application/configninja.pyc
+./*/configninja*
+../application/configninja*
+configninja.py
