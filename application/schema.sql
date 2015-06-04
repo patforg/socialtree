@@ -2,17 +2,17 @@
        - nuclearbanane
 */
 
-create table "user"
+CREATE TABLE "users"
 (
-       userID SERIAL PRIMARY KEY, 
-       email varchar(60) PRIMARY KEY,
-       userName varchar(32),
-       password varchar(32), /*VERY BAD PRACTICE!!!!*/
-       firstName varchar(20),
-       lastName varchar(20),
-       joinDate date,
-       reputation integer
-);
+  userid serial NOT NULL,
+  email varchar(60) NOT NULL,
+  username varchar(32) NOT NULL,
+  password varchar(32),
+  firstname varchar(20),
+  lastname varchar(20),
+  joindate date,
+  CONSTRAINT user_pkey PRIMARY KEY (userid, email, username)
+)
 
 
 /* END */

@@ -2,7 +2,7 @@
 # Author: NuclearBanane
 # Contributors : 
 # Date : 2015/05/25
-# Version : v0.0.1
+# Version : v0.0.1.2
 #####
 
 import tornado.ioloop   #Basic imports for the tornado library
@@ -33,7 +33,7 @@ class MainHandler(BaseHandler):
 		else :
 			page['authenticated']='false'
 
-		self.render("assets/index.html") 
+		self.render("assets/index.html")
 
 class LoginHandler(BaseHandler):
 	def get(self):
@@ -42,21 +42,40 @@ class LoginHandler(BaseHandler):
 	def post(self):
 		self.set_secure_cookie("user", self.get_argument("name"))
 		self.set_cookie("guestviewer", "true")
-		self.redirect("/")
+		y = dbhandler.verifyUser(verify)
+		if y:
+			self.set_secure_cookie("user", y[0].encode('utf-8'))
+			self.set_cookie("guestviewer", "true")
+			self.redirect("/")
+		else:
+			self.redirect("/Login") 
+
 
 class SignupHandler(BaseHandler):
 	def get(self):
-		self.render("assets/signup.html") 
-	def post(self):
-		self.set_secure_cookie("user", self.get_argument("name"))
-		self.set_cookie("guestviewer", "true")
 		self.redirect("/")
+		#self.render("assets/signup.html") 
+	def post(self):
+		#In all seriouness, I made password plain text because I lacked the time
+		newusr=dict()
+		newusr['username']=self.get_argument("username")
+		newusr['firstname']=self.get_argument("firstname")
+		newusr['lastname']=self.get_argument("lastname")
+		newusr['email']=self.get_argument("email")
+		newusr['password']=self.get_argument("password")
+		if dbhandler.addUsr(newusr):
+			self.set_secure_cookie("user", self.get_argument("username"))
+			self.set_cookie("guestviewer", "true")
+			self.redirect("/")
+		else:
+			self.redirect("/") 
+			#implement other logic
 
-	class SplashHandler(BaseHandler):
-		def get(self):
-			self.render("assets/index.html")
-		def post(self):
-			self.redirect("/Login")
+class SplashHandler(BaseHandler):
+	def get(self):
+		self.render("assets/index.html")
+	def post(self):
+		self.redirect("/Login")
 ####
 # This handler is to allow new users to view the website 
 # even if they do not hav ean account
