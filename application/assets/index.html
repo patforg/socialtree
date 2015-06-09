@@ -1,93 +1,324 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html lang="en" class="no-js">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+	<!--Stylesheet-->
+	<link rel="stylesheet" href="css/styles.css">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!--Google font-->
+	<link href='http://fonts.googleapis.com/css?family=Pacifico|Raleway|Ubuntu:400,700|Unkempt:700|Open+Sans:300|Architects+Daughter' rel='stylesheet' type='text/css'>
 
-    <title>Social Tree</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/colorbox.css" rel="stylesheet">
-    
-    <!-- Add custom CSS here -->
-    <link href="css/socialtree.css?v=1" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript"> 
+	$(document).ready( function() {
+		$('#notification').delay(1000).fadeIn();
+	});
+	</script>
 </head>
+
 <body>
-	<!--- -->
-	<header>	
-			<div class="container">
-				<div class="row text-center">
-					<img class="logo" src="img/social_tree_text_2.png"></img>
-					<h1>Rule your media.</h1><br>
-					<div class="col-md-4 col-md-12 col-md-offset-4">
-						<a id="signup" href="#lightbox" class="btn btn-primary btn-block btn-email signupButton">Sign up with email</a>
-					</div>
-				</div>
-			</div>
-	</header>
-	
-	<div class="callout1">
-		<div class="vert-text text-center">
-			<blockquote><h3>"This is the best tool to stay on top of all the social activity that matters to my business."</h3> <a href="https://twitter.com/FrancoVarriano">Franco Varriano</a><br>Founder and co-host <a href="http://www.hacktostart.com/"> Hack to Start</a> </blockquote>
-		</div>
-	</div>
-	
-	<div id="about" class="intro">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-8 col-md-12 col-md-offset-2">
-					<h2><div class="about-blurb"><strong style="color: #2F8B58">Social Tree</strong> is an innovative platform allowing you to filter and categorize your social media streams.<br></div><div> You <strong style="color: #2F8B58">choose how you enjoy</strong> the different types of content found on the big bad web.</div> <!--Social tree is an inovate platform that organizes all of your media feeds and filters out specific content.--></h2><hr><br>
-				</div>
-				<div class="col-md-2 col-md-12 col-md-offset-3">
-						<a href="https://www.facebook.com/pages/Socialtree/424475594377463" class="btn btn-primary btn-facebook">Like on Facebook</a>
-					</div>
-					<div class="col-md-2 col-md-12">
-						<a href="https://twitter.com/socialtreenow" class="btn btn-primary btn-twitter">Follow on Twitter</a>
-					</div>
-					<div class="col-md-2 col-md-12">
-						<a id="signup" href="#lightbox" class="btn btn-primary btn-block btn-email signupButton">Sign up with email</a>
-					</div>
-					<!---
-					<div class="col-md-2 col-md-12">
-						<a href="https://plus.google.com/u/0/" class="btn btn-primary btn-block btn-googleplus">Join on Google+</a>		
-					</div>-->
-			</div>
-		</div>
+
+
+
+	<div id="toggle"> </div>
+	<div  class="menu closed">
+		<ul id="rule">
+			<li style="color:black" data-toggle="modal" data-target="#myModal">
+  							Add Category</li>
+
+	<li role="presentation" class="account_link">Trending <span class="badge" style="background-color:red">10</span></li>
+			<li role="presentation" class="account_link"  id="link">Sports <span class="badge" style="background-color:red">6</span></li>
+			<li role="presentation" class="account_link"  id="coffee">Coffee<span class="badge" style="background-color:red">5</span></li>
+			<li role="presentation" class="account_link">Food <span class="badge" style="background-color:red">10</span></li>
+			<li role="presentation" class="account_link">Healthy living <span class="badge" style="background-color:red">3</span></li>
+			<li role="presentation" class="account_link" id="linkstartup" href="images/fb1.png" style="display:none;">Startup Weekend<span class="badge" style="background-color:red">4</span></li>
+ 		</ul>
+ 		<ul class="network">
+			<li  style="color:black;">Social Media +</li>
+			<li class="account_link"><img class="account_img" src="images/facebook_icon.png" > Hugh Nguyen</li>
+			<li class="account_link"><img class="account_img" src="images/twitter.png" > @uottawaSESA</li>
+			<li class="account_link"><img class="account_img" src="images/youtube_icon.png" > Amirtheboss</li>
+			<li class="account_link"><img class="account_img" src="images/pinterest_icon.png" > myAnnoyingCat</li>
+		</ul>
 	</div>
 
-	<!-- Callout -->
-    <div class="callout2">
-        <div class="vert-text">
-            <h2>"Finally... A tool that helps me cut through the noise and allow me to see what really matters to me on social media. Thank you Social Tree!" <br><a href="https://twitter.com/ErinBlaskie">Erin Blaskie</a></h2>
-        </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">New Category : Make your rules</h4>
+      </div>
+      <div class="modal-body">
+      <h2>Name your rule</h2>
+      <input type="text" name="rulename" id="rad" value="My New Rule"></label> <br>
+      <h2> Pick your networks </h2>
+     <input type="checkbox" name="awesomeness" id="rad" value="facebook"> facebook</label> <br>
+     <input type="checkbox" name="awesomeness" id="rad" value="twitter"> Twitter </label> <br>
+     <input type="checkbox" name="awesomeness" id="rad" value="rss"> RSS </label> 
+     <h2>Topic</h2>
+     <h4></h4>
+      <input type="text" name="ruletopic" id="rad" value="topic"></label> <br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" onclick="myfunc()" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
-    <!--/Callout -->
+  </div>
+</div>
 
-    <!-- Javascript libs -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.colorbox.js"></script>
+			<!-- Fixed navbar -->
+		<div id="navigation" class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" ></a>
+					<center><img alt="Social Tree" src="images/social_tree_text_color.png" style="height:65%;width:65%"></center>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#home" class="smothscroll">Home</a></li>
+						<li><a href="#desc" class="smothscroll">Friends</a></li>
+						<li><a href="#showcase" class="smothScroll">Settings</a></li>
+						<li><a href="#contact" class="smothScroll">Contact</a></li>	        
+					</ul>	
+					<div class="col-sm-3 col-md-3 pull-center">
+						<form class="navbar-form" role="search">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search" name="q">
+								<div class="input-group-btn">
+									<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i>	</button>
+								</div>
+						</form>
+					</div> 
+					<a href="http://www.facebook.com">
+						<div class="col-sm-3 col-md-3 pull-right">
+							<img src="images/profile_picture.png" href="www.facebook.com" style="height:16%;width:16%;margin:5px">
+							<p class="navbar-text"><b>Hugh Nguyen<b></p>
+						</div>
+					</a>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
 
-    <script>
-        $('.signupButton').colorbox({
-            "href": "/Signup",
-            
-        });
-    </script>
 
-    <!-- /Javascript Libs  -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-60208935-1', 'auto');
-            ga('send', 'pageview');
+		<div id="backgroundbanner" class="container-fluid" style="font-family:Raleway;">
 
-    </script>
+			<!--SPACING-->
+			<br><br><!--SPACING-->
+
+			<div class="container-fluid" id="notification" style="background-color:#f8f8f8; height:55px; display:none;position:fixed;width:100%; z-index:98; x-index:-100"> 
+
+				<center>
+					<a id="notification">
+						<p  style="text-align:center;font-size:20px;">
+							<img src="images/twitter.png" style="height:40px; width:40px;">	
+							<b>1 new notification</b>
+						</p>
+					</a>
+				</center>
+
+			</div>
+
+			<br><br>
+
+			<div class="container contentblock"  id="dress" style=" display:none
+
+			">
+
+
+			<div class="col-sm-9	">
+				<center>
+					<img class="img-responsive" id="image0" src="images/tweet0.png">		
+				</center>
+			</div>
+			<div class="col-sm-3">
+				<br><br><br><br>
+				<img class="img-responsive" src="images/twitter.png" style="height:50%; width:50%;">
+			</div>
+
+
+		</div>
+
+		<div class="container contentblock" style="
+
+		">
+
+		<div class="col-sm-9">
+			<center>
+				<img class="img-responsive" id="image1" src="images/tweet1.png">		
+			</center>
+		</div>
+		<div class="col-sm-3">
+			<br><br><br><br>
+			<img class="img-responsive" src="images/twitter.png" style="height:50%; width:50%;">
+		</div>
+
+	</div>
+
+	<div class="container contentblock" style="
+
+	">
+
+	<div class="col-sm-9">
+		<center><iframe width="560" height="315" id="image2" src="https://www.youtube.com/embed/bkV8yyUW67Q" frameborder="0" allowfullscreen></iframe></center>
+	</div>
+	<div class="col-sm-3">
+		<br><br><br><br><br>
+		<img class="img-responsive" src="images/youtube.png" style="height:60%; width:60%; margin-left:-10px;">
+	</div>
+
+
+</div>
+
+
+<div class="container contentblock" style="
+
+">
+
+<div class="col-sm-9">
+	<center><img class="img-responsive" id="image3" src="images/fb1.png" style=""></center>
+</div>
+<div class="col-sm-3">
+	<br><br><br><br>
+	<img class="img-responsive" src="images/facebook.png" style="height:45%; width:50%; margin-left:-20px;">
+</div>
+
+
+</div>
+
+<div class="container contentblock" style="
+
+">
+
+<div class="col-sm-9">
+	<center><img class="img-responsive" id="image4" src="images/pint1.png" style="height:60%; width:60%;"></center>
+</div>
+<div class="col-sm-3">
+	<br><br><br><br><br>
+	<img class="img-responsive" src="images/pinterest.png" style="height:45%; width:45%;">
+</div>
+
+</div>
+
+
+
+
+
+
+<br><br><br><br><br><br><br><!--SPACING-->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Optional: Include the jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Optional: Incorporate the Bootstrap JavaScript plugins -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$("#notification").click( function (event) {
+		$('#notification').fadeOut(500,function() {
+			$('#dress').fadeIn(500);
+		});
+	});
+});
+</script>
+
+
+<script>
+
+
+
+$( "#toggle" ).click(function() {
+	$(".menu").toggleClass("closed");
+	$(this).toggleClass("closed");
+	$(".content").toggleClass("closed");
+	$("#wrapper").toggleClass("closed")
+});
+
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+
+
+
+$("#link").click(function() {
+	$("#dress").fadeOut(1000);
+	$("#image1").fadeOut(1000, function() {
+		$("#image1").attr("src","images/sport1.png");
+	}).fadeIn(1000);
+	$("#image2").fadeOut(1000, function() {
+		$("#image2").attr("src","images/sport2.png");
+	}).fadeIn(1000);
+	$("#image3").fadeOut(1000, function() {
+		$("#image3").attr("src","images/sport3.png");
+	}).fadeIn(1000);
+	$("#image4").fadeOut(1000, function() {
+		$("#image4").attr("src","images/sport4.png");
+	}).fadeIn(1000);
+	return false;
+});
+
+
+$("#linkstartup").click(function() {
+	$("#dress").fadeOut(1000);
+	$("#image1").fadeOut(1000, function() {
+		$("#image1").attr("src","images/tweet1.png");
+	}).fadeIn(1000);
+	$("#image2").fadeOut(1000, function() {
+		$("#image2").attr("src","images/fb1.png");
+	}).fadeIn(1000);
+	$("#image3").fadeOut(1000, function() {
+		$("#image3").attr("src","images/fb1.png");
+	}).fadeIn(1000);
+	$("#image4").fadeOut(1000, function() {
+		$("#image4").attr("src","images/pint1.png");
+	}).fadeIn(1000);
+	return false;
+});
+
+
+function myFunction() {
+	var person = prompt("Please enter your category", "");
+	if (person != null) {
+		document.getElementById('linkstartup').style.display = "block";
+	}
+}
+function myfunc(){
+	
+}
+
+</script>
+
+
 </body>
+</html>
+

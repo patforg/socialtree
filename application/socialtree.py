@@ -6,7 +6,7 @@
 #####
 
 import tornado.ioloop   #Basic imports for the tornado library
-import tornado.web      #
+import tornado.web      
 import dbhandler
 
 class BaseHandler(tornado.web.RequestHandler):
@@ -40,10 +40,17 @@ class LoginHandler(BaseHandler):
 		self.render("assets/login.html") 
 
 	def post(self):
-		self.set_secure_cookie("user", self.get_argument("name"))
+		# this is dumb as fuck
+		# we wouldn't have the name before verifying that theuser info is valid or authenticated
+		#self.set_secure_cookie("user", self.get_argument("name"))
 		self.set_cookie("guestviewer", "true")
-		y = dbhandler.verifyUser(verify)
+		info=dict()
+		info['email']=self.get_argument("email")
+		info['password']=self.get_argument("password")
+
+		y = dbhandler.verifyUser(info)
 		if y:
+			print y
 			self.set_secure_cookie("user", y[0].encode('utf-8'))
 			self.set_cookie("guestviewer", "true")
 			self.redirect("/")
@@ -73,7 +80,7 @@ class SignupHandler(BaseHandler):
 
 class SplashHandler(BaseHandler):
 	def get(self):
-		self.render("assets/index.html")
+		self.render("assets/splash.html")
 	def post(self):
 		self.redirect("/Login")
 ####
